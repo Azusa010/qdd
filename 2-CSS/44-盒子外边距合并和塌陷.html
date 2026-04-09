@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box1,
+    .box2 {
+        width: 200px;
+        height: 100px;
+    }
+    .box1 {
+        
+        background-color: pink;
+        /* margin-bottom: 100px; */
+    }
+    /* .box2 {
+        margin-top: 50px;
+        background-color: yellow;
+    } */
+    /* .box3 {
+        margin-top: 50px;
+        background-color: pink;
+        border-top: 1px solid #ccc;
+    } */
+     .fatehr {
+        background-color: red;
+        /* 方法一：给父亲加边框 */
+        /* border-top: 1px solid black; */
+        /* 方法二：给父亲加内边距 */
+        /* padding-top: 10px; */
+        /* overflow: hidden; */
+        overflow: hidden;
+        height: 100px;
+        width: 100px;
+     }
+     .son {
+        background-color: pink;
+        margin-top: 10px;
+        height: 30px;
+        width: 30px;
+     }
+</style>
+<body>
+    <!-- <div class="box1"></div>
+    <div class="box2"></div> -->
+    <div class="fatehr">
+        <div class="son">
+            这是一个盒子
+        </div>
+    </div>
+</body>
+</html>

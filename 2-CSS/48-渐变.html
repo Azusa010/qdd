@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box {
+        width: auto;
+        height: 200px;
+        border: 1px solid #ccc;
+        border-collapse: collapse;
+    }
+    th,td {
+        border: 1px solid #ccc;
+        padding : 5px 2px;
+    }
+    .linearGradient {
+        height: 100px;
+        width: 1050px;
+        /* background: linear-gradient(to right,pink,red); */
+        /* background: linear-gradient(90deg,pink,red) */
+        /* background: linear-gradient(to top,pink 30%,red 70%); */
+        background: linear-gradient(180deg,#3ECEC5D8 0%,#26BCC6 100%)
+    }
+    .linearText {
+        width: 200px;
+        height: 100px;
+        font-weight: 700;
+        font-size: 30px;
+        background-image: linear-gradient(97deg, #0096FF, #BB64FF 42%, #F2416B 74%, #EB7500);;
+        -webkit-background-clip: text;
+        /* 文本填充色 为 透明 */
+        -webkit-text-fill-color: transparent;
+        /* 背景裁剪 以文字形式裁剪 */
+        background-clip: text;
+        
+        
+    }
+    .baidu-btn {
+        width: 100px;
+        height: 40px;
+        background: linear-gradient(135deg, #5B9BF5, #4285F4);
+        color: white;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        font-weight: 700;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    .baidu-btn:hover {
+        background: linear-gradient(135deg, #4285F4, #3367D6);
+        transform: scale(1.05);
+        box-shadow: 0 4px 12px rgba(66, 133, 244, 0.4);
+    }
+
+</style>
+<body>
+    <table class="box">
+        <tr>
+            <th>属性/方法</th>
+            <th>描述</th>
+            <th>示例代码</th>
+        </tr>
+        <tr>
+            <td>linear-gradient(方向，颜色1 位置，颜色2 位置...)</td>
+            <td>线性渐变（方向可控）</td>
+            <td><p>background:linear-gradient(to right,#ff6b6b,#4ecdc4)</p>
+                <p>background-image:linear-gradient(90deg,#ff6b6b 30%,#4ecdc4 70%)</p>    
+            </td>
+        </tr>
+        <tr>
+            <td>radial-gradient(形状，颜色1，颜色2...)</td>
+            <td>径向渐变（从中心向四周扩散）</td>
+            <td><p>background:radial-gradient(circle,#ff6b6b,#4ecdc4)</p>
+            </td>
+        </tr>
+    </table> 
+    <div class="linearGradient"></div>
+    <div class="linearText">线性渐变文字</div>
+    <div class="baidu-btn">百度一下</div>   
+</body>
+</html>

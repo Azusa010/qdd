@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        height: 1000px;
+    }
+    .box {
+        background-image: url('./media/大禹.jpg');
+        width: 500px;
+        height: 500px;
+        border-radius: 10px 0;
+        /* background-size: cover; */
+        background-repeat: no-repeat;
+        background-position: left top;
+        background-attachment: fixed;
+        background-size: 200px;
+        background-color: pink;
+    }
+    .box div {
+        height: 210px;
+    }
+    .table {
+        border: 2px solid #ccc;
+        border-collapse: collapse;
+        width: 80%;
+        margin: 20px auto;
+    }
+    .table th,.table td {
+        border: 1px solid #ccc;
+    }
+</style>
+<body>
+    <div class="box">
+        <div>大禹</div>
+    </div>
+
+    <table class="table">
+        <tr>
+            <th>属性</th>
+            <th>作用</th>
+            <th>常用值</th>
+        </tr>
+        <tr>
+            <td>background-color</td>
+            <td>设置背景颜色</td>
+            <td>颜色名称、十六进制、RBB、RGBA</td>  
+        </tr>
+        <tr>
+            <td>background-image</td>
+            <td>设置背景图片</td>
+            <td>url('image.jpg')</td>
+        </tr>
+        <tr>
+            <td>background-repeat</td>
+            <td>设置背景图片是否重复</td>
+            <td>repeat(默认）、no-repeat、repeat-x、repeat-y</td>
+        </tr>
+        <tr>
+            <td>background-position</td>
+            <td>定位背景图片位置</td>
+            <td>x y(如center top、或者px、％为单位) </td>
+        </tr>
+        <tr>
+            <td>background-attachment</td>
+            <td>设置背景图片是否随内容滚动</td>
+            <td>scroll(默认)、fixed</td>
+        </tr>
+        <tr>
+            <td>background-size</td>
+            <td>设置背景图片的尺寸</td>
+            <td>cover、contain、auto、或者指定宽高</td>
+        </tr>
+    </table>
+</body>
+</html>

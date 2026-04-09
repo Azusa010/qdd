@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div[class*='box'] {
+        height: 100px;
+        border-color: skyblue;
+    }
+    .box {
+        border: 2px solid skyblue;
+        border-radius: 10px;
+        width: 500px;
+    }
+    .box-child1 {
+        width: 250px;
+        border-right: 1px solid skyblue;
+        border-radius: 10px 0 0 10px;
+    }
+</style>
+<body>
+    <div class="box">
+        <div class="box-child1"></div>
+    </div>
+    
+</body>
+</html>

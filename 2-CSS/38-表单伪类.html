@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    button {
+        width: 150px;
+        height: 50px;
+        background: #ff6900;
+        border: none;
+        color: #fff;
+    }
+    /* 表单禁用伪类选择器 */
+    button:disabled {
+        background: #ccc;
+        color: #666;
+    }
+    /* 表单被选中伪类选择器 */
+    input:checked+label {
+        color: #ff6900;
+    }
+</style>
+<body>
+    <button disabled>注册</button>
+    <br>
+    <input type="checkbox" id="agree">
+    <label for="agree">我同意条款</label>
+    
+</body>
+</html>

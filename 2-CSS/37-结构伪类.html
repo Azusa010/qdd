@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .uli {
+        color: black;
+        text-decoration: underline overline;
+    }
+    .uli li:first-child {
+        font-size: 20px;
+    }
+    .uli li:nth-child(2) {
+        font-size: 30px;
+        color: pink;
+    }
+    /* 奇数个
+    .uli li:nth-child(odd) {
+
+    }
+    /* 偶数个 */
+    /* .uli li:nth-child(even){
+
+    } */ 
+
+    
+    .box {
+        width: 500px;
+        height: 300px;
+        border: 1px solid black;
+        margin: 0 auto;
+        text-align: center;
+        border-collapse: collapse;
+     }
+     .box tr:nth-child(odd) {
+         background-color: #f9f9f9;
+         color: #333;
+        }
+        .box tr:first-child {
+           background-color: #8fbcf1 !important;
+           color: #fff;
+        }
+    .box tr:hover {
+        background-color: aliceblue;
+    }
+    </style>
+<body>
+    <table border="0" class="box">
+        <tr>
+            <th>姓名</th>
+            <th>数据</th>
+            <th>得分</th>
+        </tr>
+        <tr>
+            <td>杨汉森</td>
+            <td>10分</td>
+            <td>2025年7月12日</td>
+        </tr>
+        <tr>
+            <td>李明</td>
+            <td>20分</td>
+            <td>2025年7月13日</td>
+        </tr>
+            <tr>
+                <td>王强</td>
+                <td>15分</td>
+                <td>2025年7月14日</td>
+    </table>
+</body>
+</html>

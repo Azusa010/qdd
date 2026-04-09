@@ -1,0 +1,16 @@
+{
+    "chatgpt.openOnStartup": true,
+    "editor.inlineSuggest.enabled": true,
+    "editor.suggestOnTriggerCharacters": true,
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": true,
+        "strings": true
+    },
+    "editor.tabCompletion": "on",
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": true,
+        "markdown": true
+    }
+}

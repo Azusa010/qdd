@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* 选择首行 */
+    p::first-line  {
+        color: red;
+    }
+
+    /* 选择首字母 */
+    p::first-letter {
+        font-size: 25px;
+    }
+
+    textarea {
+        width: 300px;
+        height: 150px;
+    }
+
+    textarea::placeholder {
+        color: pink;
+        line-height: 1.2;
+    }
+    div::before {
+        content: '我是';
+        color: red;
+    }
+    div::after {
+        content: '老师';
+        color: blue;
+    }
+</style>
+<body>
+    <p>
+        伪元素选择器：
+        1.伪元素是通过选择元素的特殊状态来选择元素的
+        2.伪元素选择器以双冒号开头，后面跟着伪元素的名称
+        3.常用的伪元素选择器有：::before、::after、::first-letter、::first-line等
+        4.伪元素选择器可以用来添加内容、设置样式等
+
+    </p>
+    <textarea name="" id="" placeholder=“咯咯哒咯咯哒咯咯哒咯咯哒咯咯哒咯咯哒咯咯哒咯咯哒咯咯哒咯咯哒咯咯哒咯咯哒"></textarea>
+    <div>Azu</div>
+</body>
+</html>

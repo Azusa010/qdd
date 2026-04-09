@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* display: -webkit-box; */
+    /* -webkit-box-orient: vertical; */
+    /* -webkit-line-clamp: 2; */
+    /* overflow:hidden */
+    /* text-overflow: ellipsis */
+    .box {
+        width: 200px;
+        height: auto;
+        line-height: 40px;
+        text-align: center;
+        background-color: pink;
+        /* 旧版弹性盒布局 */
+        display: -webkit-box;
+        /* 文本垂直排列 */
+        -webkit-box-orient: vertical;
+        /* 限制行数 */
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        /* 隐藏溢出 */
+        overflow:hidden ;
+        /* 文本溢出时显示省略号 */
+        text-overflow: ellipsis;
+    }
+</style>
+<body>
+    <div class="box">
+        这是一段多行文本，用于测试溢出隐藏效果。这段文本会显示在容器内，当超出指定行数时，会被隐藏并显示省略号。
+    </div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>视差滚动效果</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    /* 和可视区一样大 */
+    html, body {
+        height: 100%;
+        width: 100%;
+    }
+    .box-inside {
+        padding: 20px;
+        width: 100%;
+        height:auto;
+        background-color: rgba(0, 0,0, 0.7);
+        color: white;
+    }
+    .box-outside {
+        width: auto;
+        height: auto;
+    }
+    .box-text {
+        text-align: center;   
+        line-height: 60vh;
+        font-size: 70px;
+        color: white;
+        letter-spacing: 10px;
+        align-self: center;
+        justify-self: center;
+    }
+    .box-img {
+        width: 100%;
+        height: 100vh;
+        background-image: url('./media/th.jpg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+</style>
+<body>
+    
+</body>
+    <div class="box-outside">
+        <div class="box-img" style="background-image: url('./media/th.jpg');">
+            <div class="box-inside">
+            <p>夕阳是熔化的铁，把云絮焊成金红的鳞甲。天空在燃烧，而大地只是沉默地承接这些温柔的灰烬。</p>
+            <p>这样的黄昏，让人想起灶膛里将熄的柴火，明明灭灭地舔着旧事。而光影是狡黠的，它把柳枝拉长成琴弦，却让归鸟的翅膀，在弦上拨出无声的颤音。</p>
+            <p>偶尔有晚钟传来，像一粒铜纽扣，滚进群山厚重的褶皱里。</p>
+            <p>风景独好</p>
+            </div>
+            <div class="box-text">沙漠风暴</div>
+
+        </div>
+    </div>
+    <div class="box-outside" >
+            <div class="box-img" style="background-image: url('./media/th (1).jpg');">
+                <div class="box-inside">    
+            <p>湖面碧波如镜，倒映层叠山峦，水天相接处如同晕染的水墨画。</p>
+            <p>瀑布飞泻激起银白水花，雪山巍峨直抵云霄，尽显自然磅礴气势。</p>
+            <p>云卷云舒，天寒地冻，景色宜人。</p>
+            <p>风景独好</p>
+            <p>广阔蓝海</p>
+        </div>
+        <div class="box-text">黄山云海</div>    
+    </div>
+    <div class="box-outside" >
+            <div class="box-img" style="background-image: url('./media/th (2).jpg');">
+                <div class="box-inside">    
+            <p>山间小径蜿蜒曲折，两旁古树参天，鸟语花香，令人心旷神怡。</p>
+            <p>晨雾缭绕，如诗如画，仿佛置身于仙境之中。</p>
+            <p>云海翻腾，峰峦叠嶂，尽显大自然的鬼斧神工。</p>
+            <p>风景独好</p>
+        </div>
+        <div class="box-text">巨石阵</div>
+    </div>
+
+</html>

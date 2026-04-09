@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* box-sizing: border-box 会将 padding 和 border 包含在 width 和 height 内  
+        box-sizing: content-box 会将 padding 和 border 分别计算在 width 和 height 外 */
+    * {
+        box-sizing: border-box;
+    }
+    .box {
+        width: 200px;
+        height: 100px;
+        box-sizing: border-box;
+        padding: 10px;
+        background-color: black;
+    }
+</style>
+<body>
+    <div class="box"></div>
+    
+</body>
+</html>
