@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../iconfont/iconfont.css">
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .sanlian {
+        /* 如果子元素有大小，则按照给定大小来显示
+        如果子元素没有大小，则拉伸至充满父容器
+        若子元素总宽度超过容器宽度，默认压缩子元素 */
+        /* 父控子；添加弹性布局 */
+        display: flex;
+        height: 100px;
+        width: 200px;
+        /* border: 1px solid pink; */
+        /* justify-content: flex-start; */
+        /* justify-content: center ; */
+        /* justify-content: flex-end; */
+        /* justify-content: space-between; */
+        /* justify-content: space-around; */
+        /* justify-content: center; */
+        /* align-items: 交叉轴对齐方式; */
+        /* align-items: flex-start; */
+        /* align-items: flex-end; */
+        /* align-items: center; */
+        /* align-items: center; */
+        /* 项目拉伸填充整个容器高度，需子项目无高度 */
+
+        /* row 水平 column 垂直 -reverse 反向排列 */
+        /* flex-direction: column; */
+        justify-content: space-evenly;
+
+    }
+    .sanlian .dianzan {
+        /* height: 50px; */
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sanlian .dianzan i {
+        font-size: 24px;
+    }
+    .sanlian .dianzan span {
+        font-size: 12px;
+    }
+
+    ul,li {
+        list-style: none;
+    }
+</style>
+<body>
+    <div >
+        <ul class="sanlian">
+            <li class="dianzan"><i class="iconfont icon-xihuan"></i><span>点赞</span></li>
+            <li class="dianzan"><i class="iconfont icon-gengduo"></i><span>更多</span></li>
+            <li class="dianzan"><i class="iconfont icon-kaitongfuwu"></i><span>开通服务</span></li>
+        </ul>
+
+    </div>
+    
+</body>
+</html>

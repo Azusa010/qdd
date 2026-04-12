@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* 额外标签法 */
+    /* .clear {
+        clear:both
+    } */
+     /*清除浮动单伪元素方法  */
+     .clearfix::after {
+        content: '';
+        display: block;
+        clear: both;
+     }
+     /* 清除浮动单双伪元素方法 */
+     .clearfix:before,
+     .clearfix::after {
+        content: ' ';
+        display: table;
+     }
+     .clearfix::after {
+        clear :both;
+     }
+     .main {
+        overflow: hidden;
+     }
+</style>
+<body>
+    <div class="main clearfix">
+        <div class="son1"></div>
+        <div class="son2"></div>
+        <!-- 额外标签法，添加一个div -->
+        <!-- <div class="clear"></div> -->
+    </div>
+</body>
+</html>
