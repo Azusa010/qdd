@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box {
+        box-sizing: border-box;
+        width: 80%;
+        display: flex;
+        border: 1px solid black;
+        margin: 0 auto;
+        gap: 10px;
+    }
+    .box .item {
+        width: 80px;
+        height: 100px;
+        background-color: pink;
+        /* 优先级高 */
+        flex: 1;
+    }
+    .box .item:nth-child(odd){
+        background-color: purple;
+    }
+</style>
+<body>
+    <div class="box">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+    
+</body>
+</html>
